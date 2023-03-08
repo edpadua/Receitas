@@ -1,0 +1,18 @@
+.ingrediente{
+
+}
+
+.ingredientes{
+ list-style-type: none;
+ padding-inline-start:0;
+ font-weight: 300;
+ font-size: 18px;
+}
+
+.Receita{
+    margin-bottom:50px;
+}
+
+.Receita h2{
+    font-size:25px;
+}
