@@ -10,9 +10,29 @@
 }
 
 .Receita{
-    margin-bottom:50px;
+    margin-bottom: 50px;
+    flex: 0 0 30.3%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
 }
 
 .Receita h2{
     font-size:25px;
+}
+
+.ReceitaContent{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+.tipo-de-culinaria{
+    text-transform: capitalize;
+}
+
+.tipos-de-culinaria{
+    list-style-type: none;
+    padding-inline-start:0;
 }

@@ -6,4 +6,18 @@
 
 .busca-form{
     margin-bottom: 100px;
+    justify-content: center;
+    display:flex;
+}
+
+.busca-input{
+    width: 20%;
+}
+
+
+.receitas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
 }

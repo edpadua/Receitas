@@ -15,9 +15,7 @@ function Receitas() {
     const [busca, setBusca] = useState("");
     const [query, setQuery] = useState("chicken");
 
-    useEffect(() => {
-        getReceitas();
-    }, [query]);
+
 
     const getBusca = e => {
         e.preventDefault();
@@ -31,20 +29,28 @@ function Receitas() {
 
 
 
-    const getReceitas = async () => {
-        const res = await axios.get(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-        setReceitas(res.data.hits);
-        console.log(res.data.hits);
-        
-    }
 
 
-   /* const getReceitas = async () => {
-        const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
-        const data = await response.json();
-        setReceitas(data.hits);
-        console.log(data.hits);
-    }*/
+    useEffect(() => {
+        const getReceitas = async () => {
+            const res = await axios.get(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+            setReceitas(res.data.hits);
+            console.log(res.data.hits);
+
+        }
+
+        getReceitas();
+    }, [query,APP_ID,APP_KEY]);
+
+
+
+
+    /* const getReceitas = async () => {
+         const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+         const data = await response.json();
+         setReceitas(data.hits);
+         console.log(data.hits);
+     }*/
 
 
     return (
@@ -53,22 +59,22 @@ function Receitas() {
 
             <form onSubmit={getBusca} className="busca-form">
 
-                <input className="search-bar" type="text" value={busca} onChange={atualizaBusca} />
-                <button className="search-button" type="submit">Pesquisar</button>
+                <input className="form-control busca-input" type="text" value={busca} onChange={atualizaBusca} placeholder="O que está procurando ?" />
+                <button className="search-button button-principal" type="submit">Pesquisar</button>
             </form>
 
             <div className="receitas">
                 {console.log("receitas", receitas)}
 
-               
-                    {
+
+                {
                     receitas.map(receita => (
-                        <div>
-                            <Receita
-                                receita={receita}
-                                
-                            />
-                        </div>
+
+                        <Receita
+                            receita={receita}
+
+                        />
+
 
 
                     ))}
