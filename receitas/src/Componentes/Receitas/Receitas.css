@@ -15,6 +15,25 @@
 }
 
 
+@media (max-width: 767px) {
+    .busca-input{
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    .busca-input{
+        width: 30%;
+    }
+}
+
+@media (min-width: 1025px )  {
+    .busca-input{
+        width: 20%;
+    }
+}
+
+
 .receitas{
     display: flex;
     flex-wrap: wrap;
