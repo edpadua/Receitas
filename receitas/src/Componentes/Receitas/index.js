@@ -6,6 +6,8 @@ import './Receitas.css';
 
 import axios from "axios";
 
+
+
 function Receitas() {
     const APP_ID = process.env.REACT_APP_API_ID;
     const APP_KEY = process.env.REACT_APP_API_KEY;
@@ -40,7 +42,7 @@ function Receitas() {
         }
 
         getReceitas();
-    }, [query,APP_ID,APP_KEY]);
+    }, [query, APP_ID, APP_KEY]);
 
 
 
@@ -59,17 +61,25 @@ function Receitas() {
                 {console.log("receitas", receitas)}
 
 
-                {
-                    receitas.map(receita => (
+                {receitas != null &&
+                    receitas.length != null &&
+                    receitas.length > 0 ?
+                    <>
+                        <h2 className='palavra-chave'>Lista de receitas com a palavra: {query}</h2>
 
-                        <Receita
-                            receita={receita}
+                        {receitas.map(receita => (
+                            <Receita receita={receita} />
 
-                        />
+                        ))}
+                    </>
+
+                    : (
+
+                        <h2 className='palavra-chave'>Não há receitas com a palavra: {query}</h2>
+                        
+                    )}
 
 
-
-                    ))}
             </div>
         </div>
 

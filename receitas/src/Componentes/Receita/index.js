@@ -5,11 +5,13 @@ import './Receita.css';
 
 
 
+
 function Receita({ receita }) {
     return (
         <div className="Receita">
+            <img className="imagem" src={receita.recipe.image} alt="" />
             <div className="ReceitaContent">
-                <img className="imagem" src={receita.recipe.image} alt="" />
+                
                 <h2>{receita.recipe.label}</h2>
                 <ol className='ingredientes'>
                     {receita.recipe.ingredients.map(ingrediente => (
@@ -30,6 +32,7 @@ function Receita({ receita }) {
 
                 <a href={receita.recipe.url} target="_blank" rel="noopener noreferrer"><button className='button-principal'>Instruções</button></a>
             </div>
+            
         </div>
 
     )

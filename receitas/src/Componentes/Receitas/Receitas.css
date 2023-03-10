@@ -5,7 +5,7 @@
 
 
 .busca-form{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     justify-content: center;
     display:flex;
 }
@@ -39,4 +39,16 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
+}
+
+.palavra-chave{
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.MensagemBusca{
+    width: 100%;
+    display: block;
+    text-align: center;
 }
