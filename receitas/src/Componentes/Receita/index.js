@@ -26,7 +26,7 @@ function Receita({ receita }) {
                     ))}
                 </ul>
 
-                <p>Calorias : {receita.recipe.calories}</p>
+                <p>{receita.recipe.calories.toFixed(2)} Calorias</p>
 
 
 
