@@ -81,6 +81,7 @@ Get the key values API_ID and API_KEY from the website.
 Open the file .env, insert the key values:
 
 REACT_APP_API_ID = API_ID
+
 REACT_APP_API_KEY = API_KEY
 
 
