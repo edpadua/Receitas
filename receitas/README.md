@@ -1,3 +1,5 @@
+#Lista de Receitas
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +70,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### [🌐 Demo][(https://receitas-three.vercel.app/)]
+
+### API Edaman 
+
+[🚀 Adamam Api](https://www.edamam.com/)
+
+Get the key values API_ID and API_KEY from the website. 
+
+Open the file .env, insert the key values:
+
+REACT_APP_API_ID = API_ID
+
+REACT_APP_API_KEY = API_KEY
+
+
+
