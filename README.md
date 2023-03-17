@@ -1,12 +1,12 @@
 # Receitas
 
-# About 
+## About 
 
 This project shows a list of recipes with main information and ingredients, based on the keyword searched by the user. This list of recipes is consumed from the Edaman REST API.
 
 The purpose of this project is to put into practice some aspects of the React library, such as the use of hooks, componentization and consumption of API RESP, in this case with the Axios tool.
 
-# Setup
+### Setup
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
@@ -66,14 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 npm run build fails to minify
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-# Demo
-
-[🌐 Demo][(https://receitas-three.vercel.app/)]
+### [🌐 Demo][(https://receitas-three.vercel.app/)]
 
 ![image](https://user-images.githubusercontent.com/4975360/225921786-9e56563f-9bb0-45be-88d6-0490e4e67ed0.png)
 
-# API Edamam
-[🚀 Edamam Api](https://www.edamam.com/)
+### [🚀 Edamam Api](https://www.edamam.com/)
 
 Get the key values API_ID and API_KEY from the website.
 
